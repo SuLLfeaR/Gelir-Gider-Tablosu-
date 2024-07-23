@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="giderdatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="gelenler">
+    <Key>
+      <PropertyRef Name="gelenid" />
+    </Key>
+    <Property Name="gelenid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tarih" Type="DateTime" Precision="0" />
+    <Property Name="gonderen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fiyat" Type="Int32" />
+  </EntityType>
+  <EntityType Name="gidenler">
+    <Key>
+      <PropertyRef Name="giderid" />
+    </Key>
+    <Property Name="giderid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tarih" Type="DateTime" Precision="0" />
+    <Property Name="kisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fiyat" Type="Int32" />
+  </EntityType>
+  <EntityType Name="kartlar">
+    <Key>
+      <PropertyRef Name="kartid" />
+    </Key>
+    <Property Name="kartid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kartad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alınan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="fiyat" Type="Int32" />
+    <Property Name="tarih" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="giderdatabaseEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="gelenler" EntityType="Self.gelenler" />
+    <EntitySet Name="gidenler" EntityType="Self.gidenler" />
+    <EntitySet Name="kartlar" EntityType="Self.kartlar" />
+  </EntityContainer>
+</Schema>
