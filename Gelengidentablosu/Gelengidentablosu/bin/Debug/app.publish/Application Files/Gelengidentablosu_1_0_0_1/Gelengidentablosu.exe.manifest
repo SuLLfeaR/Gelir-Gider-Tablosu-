@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Gelengidentablosu.exe" version="1.0.0.1" publicKeyToken="35db5655909faeb4" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Gelengidentablosu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Gelengidentablosu.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5225168">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nCD7KthqdgsMauvZMByQCYkdAq4UcgqTkmwLU1uK0Js=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="622288">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4OEmw7inupUB0D+Z1Upcu9F0vOy2FwCYq0zBIZ8n+TM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gelengidentablosu.exe" size="33704">
+      <assemblyIdentity name="Gelengidentablosu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+Tos/sKpyQ9hFOmRAnm7K5eqCgnfTXZFkKPFUdiWiOc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Gelengidentablosu.exe.config" size="2646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OUJ74BTyt6ajphSTURmeS9aKGmwNr48LmHDlS5LZwLY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model1.Context.tt" size="22930">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iH6jRm/ArXOO/wVogKb8ZOaRJ6DvCC6vOswudwQkDnQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model1.tt" size="25275">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CabSpKm6yYNT6twBZzKHKM3v3aBYMgNzK0uSDYpHoWw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ERENS\erenm" issuerKeyHash="dd71b26ca0a3467ee2c1eaa6892fa1c18e495509" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>O4VuvqpEh218XpqDAxlkbUGE2nx+pbFTG3sjQf8JiT0=</DigestValue></Reference></SignedInfo><SignatureValue>QdrMOaQwah8D+aVqg7zIjM/VF0AdN9kj/VXQaqxIUQvrgE9TcaE9z4QAVNJsjMJvfNru/pDttQonhs2wd+0ILPF7l5Lnz5LX4VuWM/uMI5od2JWZ+rvroI0rKRnjnkxqUXY94ScJiBZzfW1KC2QfX8S4G9FRmTHOgxcgNMVd+R8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uymn0T+OFHMIs+enu9HU69ykehtD9G8ckn1jXLCenhFDjsDokDKkUyzL178Af7q4nuYQ3ILbTG1FzBCk874veNfQiM5Lz8UBXmgcKSGEKVqr9bzRQ3pCJv5Q9M508VUgApE4DVzIzJItb9ebcMT6RIL3mUBrFzIFvdbFaAhtWaE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3d8909ff41237b1b53b1a57e7cda84416d641903839a5e7c6d8744aabe6e853b" Description="" Url=""><as:assemblyIdentity name="Gelengidentablosu.exe" version="1.0.0.1" publicKeyToken="35db5655909faeb4" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ERENS\erenm</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xjNnqX4mX9R2rzJR3znE+3TSLErpWWXj4LLZvtkad44=</DigestValue></Reference></SignedInfo><SignatureValue>JuJbab4idWjvYjbFvSbO8lbgxM91URIDd7/1zp2m59Y9YudAEADM6HvxS6Vd6/ak21KJEmrMgNh6eSADSoGlHSaEBg674WxS2aI4Jo4qUDZ3zTgImzMxBbYvgyQO7os0qzCWF0kQs1LiSxBDUslBwJ/zeslPgiSdNbT0OdHsI7g=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uymn0T+OFHMIs+enu9HU69ykehtD9G8ckn1jXLCenhFDjsDokDKkUyzL178Af7q4nuYQ3ILbTG1FzBCk874veNfQiM5Lz8UBXmgcKSGEKVqr9bzRQ3pCJv5Q9M508VUgApE4DVzIzJItb9ebcMT6RIL3mUBrFzIFvdbFaAhtWaE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQHFLHTXxAAL5EJcC53+HiQDANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYARQBSAEUATgBTAFwAZQByAGUAbgBtMB4XDTI0MDcwMTE2MDQyMloXDTI1MDcwMTIyMDQyMlowITEfMB0GA1UEAx4WAEUAUgBFAE4AUwBcAGUAcgBlAG4AbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuymn0T+OFHMIs+enu9HU69ykehtD9G8ckn1jXLCenhFDjsDokDKkUyzL178Af7q4nuYQ3ILbTG1FzBCk874veNfQiM5Lz8UBXmgcKSGEKVqr9bzRQ3pCJv5Q9M508VUgApE4DVzIzJItb9ebcMT6RIL3mUBrFzIFvdbFaAhtWaECAwEAATANBgkqhkiG9w0BAQsFAAOBgQCo3lhFCeFCWNF3cCT8WMsqhla/v8lkCahv0D+3x0LWSSPx/zwtUX/kquAkswjgN3HjGgd4AdqwPFQ3QlEZeWtJVDwj2D03YmINmeG9/iiDF2GMlEaf5pes+rtk2XvD0CXDhYgjS28VmPBTt67Aw1NH60d98u9Y9cnEsR2PP6gaLQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

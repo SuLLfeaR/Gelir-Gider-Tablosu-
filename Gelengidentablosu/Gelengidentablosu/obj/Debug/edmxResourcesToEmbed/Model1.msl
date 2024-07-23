@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="giderdatabaseModelStoreContainer" CdmEntityContainer="giderdatabaseEntities3">
+    <EntitySetMapping Name="gelenler">
+      <EntityTypeMapping TypeName="giderdatabaseModel.gelenler">
+        <MappingFragment StoreEntitySet="gelenler">
+          <ScalarProperty Name="gelenid" ColumnName="gelenid" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="gonderen" ColumnName="gonderen" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gidenler">
+      <EntityTypeMapping TypeName="giderdatabaseModel.gidenler">
+        <MappingFragment StoreEntitySet="gidenler">
+          <ScalarProperty Name="giderid" ColumnName="giderid" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="kisi" ColumnName="kisi" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kartlar">
+      <EntityTypeMapping TypeName="giderdatabaseModel.kartlar">
+        <MappingFragment StoreEntitySet="kartlar">
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="kartid" ColumnName="kartid" />
+          <ScalarProperty Name="kartad" ColumnName="kartad" />
+          <ScalarProperty Name="alınan" ColumnName="alınan" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

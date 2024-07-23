@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="giderdatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="gelenler">
+          <Key>
+            <PropertyRef Name="gelenid" />
+          </Key>
+          <Property Name="gelenid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tarih" Type="date" />
+          <Property Name="gonderen" Type="nvarchar" MaxLength="50" />
+          <Property Name="aciklama" Type="nvarchar" MaxLength="50" />
+          <Property Name="fiyat" Type="int" />
+        </EntityType>
+        <EntityType Name="gidenler">
+          <Key>
+            <PropertyRef Name="giderid" />
+          </Key>
+          <Property Name="giderid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tarih" Type="date" />
+          <Property Name="kisi" Type="nvarchar" MaxLength="50" />
+          <Property Name="aciklama" Type="nvarchar" MaxLength="50" />
+          <Property Name="fiyat" Type="int" />
+        </EntityType>
+        <EntityType Name="kartlar">
+          <Key>
+            <PropertyRef Name="kartid" />
+          </Key>
+          <Property Name="kartid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tarih" Type="date" />
+          <Property Name="kartad" Type="nvarchar" MaxLength="50" />
+          <Property Name="alınan" Type="nvarchar(max)" />
+          <Property Name="fiyat" Type="int" />
+        </EntityType>
+        <EntityContainer Name="giderdatabaseModelStoreContainer">
+          <EntitySet Name="gelenler" EntityType="Self.gelenler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="gidenler" EntityType="Self.gidenler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kartlar" EntityType="Self.kartlar" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="giderdatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="gelenler">
+          <Key>
+            <PropertyRef Name="gelenid" />
+          </Key>
+          <Property Name="gelenid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tarih" Type="DateTime" Precision="0" />
+          <Property Name="gonderen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="fiyat" Type="Int32" />
+        </EntityType>
+        <EntityType Name="gidenler">
+          <Key>
+            <PropertyRef Name="giderid" />
+          </Key>
+          <Property Name="giderid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tarih" Type="DateTime" Precision="0" />
+          <Property Name="kisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="fiyat" Type="Int32" />
+        </EntityType>
+        <EntityType Name="kartlar">
+          <Key>
+            <PropertyRef Name="kartid" />
+          </Key>
+          <Property Name="kartid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kartad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="alınan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="fiyat" Type="Int32" />
+          <Property Name="tarih" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="giderdatabaseEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="gelenler" EntityType="Self.gelenler" />
+          <EntitySet Name="gidenler" EntityType="Self.gidenler" />
+          <EntitySet Name="kartlar" EntityType="Self.kartlar" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="giderdatabaseModelStoreContainer" CdmEntityContainer="giderdatabaseEntities3">
+          <EntitySetMapping Name="gelenler">
+            <EntityTypeMapping TypeName="giderdatabaseModel.gelenler">
+              <MappingFragment StoreEntitySet="gelenler">
+                <ScalarProperty Name="gelenid" ColumnName="gelenid" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="gonderen" ColumnName="gonderen" />
+                <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+                <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="gidenler">
+            <EntityTypeMapping TypeName="giderdatabaseModel.gidenler">
+              <MappingFragment StoreEntitySet="gidenler">
+                <ScalarProperty Name="giderid" ColumnName="giderid" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="kisi" ColumnName="kisi" />
+                <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+                <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kartlar">
+            <EntityTypeMapping TypeName="giderdatabaseModel.kartlar">
+              <MappingFragment StoreEntitySet="kartlar">
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="kartid" ColumnName="kartid" />
+                <ScalarProperty Name="kartad" ColumnName="kartad" />
+                <ScalarProperty Name="alınan" ColumnName="alınan" />
+                <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

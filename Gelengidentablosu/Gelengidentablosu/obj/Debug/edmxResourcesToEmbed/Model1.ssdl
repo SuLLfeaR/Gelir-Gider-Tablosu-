@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="giderdatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="gelenler">
+    <Key>
+      <PropertyRef Name="gelenid" />
+    </Key>
+    <Property Name="gelenid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tarih" Type="date" />
+    <Property Name="gonderen" Type="nvarchar" MaxLength="50" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="50" />
+    <Property Name="fiyat" Type="int" />
+  </EntityType>
+  <EntityType Name="gidenler">
+    <Key>
+      <PropertyRef Name="giderid" />
+    </Key>
+    <Property Name="giderid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tarih" Type="date" />
+    <Property Name="kisi" Type="nvarchar" MaxLength="50" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="50" />
+    <Property Name="fiyat" Type="int" />
+  </EntityType>
+  <EntityType Name="kartlar">
+    <Key>
+      <PropertyRef Name="kartid" />
+    </Key>
+    <Property Name="kartid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tarih" Type="date" />
+    <Property Name="kartad" Type="nvarchar" MaxLength="50" />
+    <Property Name="alınan" Type="nvarchar(max)" />
+    <Property Name="fiyat" Type="int" />
+  </EntityType>
+  <EntityContainer Name="giderdatabaseModelStoreContainer">
+    <EntitySet Name="gelenler" EntityType="Self.gelenler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="gidenler" EntityType="Self.gidenler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kartlar" EntityType="Self.kartlar" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
